@@ -1,0 +1,32 @@
+:root { --ink:#1c1916; --paper:#f6f1e8; --pine:#1f3a34; --clay:#c45c26; --line:#e0d5c6; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: Outfit, Segoe UI, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.55; }
+.wrap { width: min(1040px, calc(100% - 32px)); margin: 0 auto; }
+.top { position: sticky; top: 0; background: var(--pine); color: #f6f1e8; z-index: 4; }
+.bar { display:flex; gap:16px; align-items:center; min-height:62px; }
+.brand, nav a, .call, footer a { color:#f6f1e8; text-decoration:none; }
+.brand { font-family: Literata, Georgia, serif; }
+nav { margin-left:auto; display:flex; gap:14px; }
+.call { border:1px solid #d7a15e; padding:8px 12px; }
+h1,h2,h3 { font-family: Literata, Georgia, serif; line-height: 1.15; }
+h1 { font-size: clamp(2rem, 4vw, 3.2rem); }
+.hero { padding: 46px 0 32px; background: #efe6d8; }
+.hero-grid, .split, .cards, .quotes { display:grid; grid-template-columns: 1.4fr .85fr; gap: 24px; }
+.cards, .quotes { grid-template-columns: 1fr 1fr; }
+.eyebrow { text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; color: var(--clay); font-weight: 700; }
+.btn, button { background: var(--clay); color:#fff; border:0; padding:12px 16px; text-decoration:none; font-weight:700; display:inline-block; }
+.btn.ghost { background: transparent; color: var(--pine); border:1px solid var(--pine); }
+.panel { background: var(--pine); color:#f6f1e8; padding:14px; }
+section { padding: 40px 0; }
+.band { background:#fff; }
+article, blockquote, .note { border:1px solid var(--line); padding:16px; background:#fff; }
+blockquote { margin:0; }
+details { border-bottom:1px solid var(--line); padding:10px 0; }
+summary { cursor:pointer; font-weight:700; }
+form { display:grid; gap:8px; }
+input, textarea { font: inherit; padding:10px; border:1px solid #cbbba8; }
+footer { background: var(--pine); color:#f6f1e8; padding: 26px 0; }
+.fine { color:#6a5f54; font-size:.92rem; }
+footer .fine { color:#d9cfc0; }
+address { font-style: normal; }
+@media (max-width: 800px) { nav { display:none; } .hero-grid, .split, .cards, .quotes { grid-template-columns: 1fr; } }
